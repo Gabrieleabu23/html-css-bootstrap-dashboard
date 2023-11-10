@@ -2,66 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Boolean Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Boolean Dashboard</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <form class="d-flex width100">
-                        <span class="input-group-text bg-dark border-0 width100">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="form-control me-2 border-0 bg-trasparent" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
-                                aria-label="Search">
-                        </span>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul> -->
-                   
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div id="wrapper">
-        <div id="side-bar"></div>
-        <div id="main-content">
-            <nav></nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid flex-nowrap">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.svg" alt="" width="150" height="50">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <form class=" d-flex grow_nav bg_search_bar border_radius_20 border-0 me-2">
+          <div class="input-group bg-transparent">
+            <span class="input-group-text bg-transparent border-0" id="basic-addon1"><i
+                class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control bg-transparent ps-0 border-0"
+              placeholder="Prova a cercare: Lezioni di Laravels " aria-describedby="basic-addon1">
+          </div>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><i class="fa-solid fa-list-ul p-0 pe-2 ps-2 text-gray"></i></li>
+            <li><i class="fa-solid fa-circle-question pe-2 ps-2"></i></li>
+            <li><i class="fa-solid fa-ellipsis-vertical pe-2 ps-2"></i></li>
+          </ul>
         </div>
+        <div class="btn-group">
+          <a type="button" class="btn btn-secondary border-0 bg-transparent" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="wrapper">
+    <div id="side-bar">
+      <nav class="navbar navbar-expand-md navbar-light bg-light" style="height: 100px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Hidden brand</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0  navbar-expand-md navbar-toggler">
+            <li>boh</li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <div id="main-content">
+      <nav></nav>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

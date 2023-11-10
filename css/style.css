@@ -3,22 +3,43 @@
     padding: 0;
     margin: 0ß;
 }
+
+
+/* MAIN CLASSES */
+
+.border_radius_20{
+    border-radius: 0.45rem;
+}
+
+/* FONT AWESOME */
+.fa-solid.fa-bell{
+    color: #ff8f00;
+}
+/* NAVBAR */
 #search_bar{
     content: "\f002";
 }
-.width100{
-    flex-grow: 1;
-    width: 100%;
+.grow_nav{
+    flex-basis: 80%;
 }
+.bg_search_bar{
+    background-color: #e5e5e5;
+}
+
+nav form input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+/* MAIN CONTAINER */
 #wrapper{
     display: flex;
-
+    height: calc(100vh - 100px );
+    overflow-y: auto;
     /* DEBUG */
     background-color: red;
-    height: 100vh;
 }
 #side-bar{
-    flex-basis: 20%;
+    flex-basis: 10%;
     height: 100vh;
     /* DEBUG */
     background-color: blue;
@@ -30,8 +51,7 @@
     background-color: green;
 
 }
-#main-content nav{
-
+#main-content {
     /* DEBUG */
     background-color: violet;
     height: 100px;
