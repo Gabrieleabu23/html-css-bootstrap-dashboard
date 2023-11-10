@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0ß;
+}
+#search_bar{
+    content: "\f002";
+}
+.width100{
+    flex-grow: 1;
+    width: 100%;
+}
+#wrapper{
+    display: flex;
+
+    /* DEBUG */
+    background-color: red;
+    height: 100vh;
+}
+#side-bar{
+    flex-basis: 20%;
+    height: 100vh;
+    /* DEBUG */
+    background-color: blue;
+}
+#main-content{
+    flex-grow: 1;
+    height: 100vh;
+    /* DEBUG */
+    background-color: green;
+
+}
+#main-content nav{
+
+    /* DEBUG */
+    background-color: violet;
+    height: 100px;
+}
