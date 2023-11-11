@@ -15,15 +15,15 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <div class="container-fluid flex-nowrap">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-light bg-light ">
+      <div class="container-fluid flex-nowrap bg-white align-items-center">
+        <a class="navbar-brand d-none d-lg-block" href="#">
           <img src="/img/logo.svg" alt="" width="150" height="50">
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="/img/mobile-logo.png" alt="" width="50" class="bg-transparent" height="50">
+        </a>
+
         <form class=" d-flex grow_nav bg_search_bar border_radius_20 border-0 me-2">
           <div class="input-group bg-transparent">
             <span class="input-group-text bg-transparent border-0" id="basic-addon1"><i
@@ -32,13 +32,11 @@
               placeholder="Prova a cercare: Lezioni di Laravels " aria-describedby="basic-addon1">
           </div>
         </form>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li><i class="fa-solid fa-list-ul p-0 pe-2 ps-2 text-gray"></i></li>
-            <li><i class="fa-solid fa-circle-question pe-2 ps-2"></i></li>
-            <li><i class="fa-solid fa-ellipsis-vertical pe-2 ps-2"></i></li>
-          </ul>
-        </div>
+        <ul class="navbar-nav flex-row me-auto mb-2 mb-lg-0 d-none d-lg-flex ">
+          <li><i class="fa-solid fa-list-ul p-0 pe-2 ps-2 text-gray"></i></li>
+          <li><i class="fa-solid fa-circle-question pe-2 ps-2"></i></li>
+          <li><i class="fa-solid fa-ellipsis-vertical pe-2 ps-2"></i></li>
+        </ul>
         <div class="btn-group">
           <a type="button" class="btn btn-secondary border-0 bg-transparent" data-bs-toggle="dropdown"
             aria-expanded="false">
@@ -55,16 +53,16 @@
   </header>
   <div id="wrapper">
     <div id="side-bar">
-      <nav class="navbar navbar-expand-md navbar-light bg-light" style="height: 100px;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Hidden brand</a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0  navbar-expand-md navbar-toggler">
-            <li>boh</li>
+      <div class="container-fluid ">
+          <ul class="navbar-nav p-4">
+            <li class="nav-item d-flex gap-2 align-items-center">
+              <i class="fa-solid fa-house"></i><span>HOME</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
           </ul>
-        </div>
+      </div>
       </nav>
     </div>
     <div id="main-content">

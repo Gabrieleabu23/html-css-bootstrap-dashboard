@@ -30,7 +30,10 @@ nav form input::placeholder{
     font-size: 0.8rem;
     font-weight: 600;
 }
-/* MAIN CONTAINER */
+
+/* SIDEBAR */
+
+/* MAIN CONTAINERS */
 #wrapper{
     display: flex;
     height: calc(100vh - 100px );
@@ -39,14 +42,15 @@ nav form input::placeholder{
     background-color: red;
 }
 #side-bar{
-    flex-basis: 10%;
-    height: 100vh;
+    flex-basis: 14%;
+    height: calc(100vh - 76px);
     /* DEBUG */
     background-color: blue;
 }
 #main-content{
     flex-grow: 1;
     height: 100vh;
+    /* overflow: auto; */
     /* DEBUG */
     background-color: green;
 
