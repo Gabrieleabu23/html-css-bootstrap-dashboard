@@ -52,16 +52,24 @@
     </nav>
   </header>
   <div id="wrapper">
-    <div id="side-bar">
-      <div class="container-fluid ">
-          <ul class="navbar-nav p-4">
-            <li class="nav-item d-flex gap-2 align-items-center">
-              <i class="fa-solid fa-house"></i><span>HOME</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
+    <div id="side-bar" class="bg_side-bar">
+      <div class="container-fluid">
+          <div class="row justify-content-between text-white">
+            <ul class="navbar-nav p-4 mx-auto gap-3">
+              <li class="nav-item d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-house"></i><span class="d-none d-lg-inline">Home</span>
+              </li>
+              <li class="nav-item d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-chart-simple me-1"></i><span class="d-none d-lg-inline">Stats</span>
+              </li>
+              <li class="nav-item d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span>
+              </li>
+            </ul>
+            <div class="d-flex gap-3 align-items-center p-4 mt-auto">
+              <i class="fa-solid fa-gear gap-3"></i><span class="ps-1 d-none d-lg-inline">Admin</span>
+            </div>
+          </div>
       </div>
       </nav>
     </div>

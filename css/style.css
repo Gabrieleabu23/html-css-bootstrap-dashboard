@@ -31,8 +31,15 @@ nav form input::placeholder{
     font-weight: 600;
 }
 
-/* SIDEBAR */
 
+/* SIDEBAR */
+#side-bar .container-fluid,
+#side-bar .row{
+    height: 100%;
+}
+.fa-solid.fa-signal{
+    margin-left: -2px;
+}
 /* MAIN CONTAINERS */
 #wrapper{
     display: flex;
@@ -42,10 +49,15 @@ nav form input::placeholder{
     background-color: red;
 }
 #side-bar{
-    flex-basis: 14%;
-    height: calc(100vh - 76px);
+    flex-basis: min-content;
+    padding-right: 20px;
+    height: 100vh;
+    overflow: auto;
     /* DEBUG */
-    background-color: blue;
+    background-color:#051e34;
+}
+.bg_side-bar{
+    background-image: url(../img/sidebar-bg.png);
 }
 #main-content{
     flex-grow: 1;
@@ -59,4 +71,11 @@ nav form input::placeholder{
     /* DEBUG */
     background-color: violet;
     height: 100px;
+}
+
+
+@media all and (max-width:991px){
+    #side-bar{
+        padding-right: 0px;
+    }
 }
