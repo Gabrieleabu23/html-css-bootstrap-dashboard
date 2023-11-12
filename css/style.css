@@ -30,6 +30,11 @@ nav form input::placeholder{
     font-size: 0.8rem;
     font-weight: 600;
 }
+header .form-control:focus {
+    outline:0;
+    box-shadow:0 0 0 0.1rem transparent;
+  }
+  
 
 
 /* SIDEBAR */
@@ -66,11 +71,6 @@ nav form input::placeholder{
     /* DEBUG */
     background-color: green;
 
-}
-#main-content {
-    /* DEBUG */
-    background-color: violet;
-    height: 100px;
 }
 
 
