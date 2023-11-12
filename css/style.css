@@ -1,9 +1,12 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0ß;
+    margin: 0;
 }
 
+header{
+    height: 70px;
+}
 
 /* MAIN CLASSES */
 a{
@@ -92,15 +95,15 @@ li.breadcrumb-item:nth-child(2) {
 /* MAIN CONTAINERS */
 #wrapper{
     display: flex;
-    height: calc(100vh - 100px );
+    height: calc(100vh - 70px);
     overflow-y: auto;
     /* DEBUG */
     background-color: red;
 }
 #side-bar{
-    flex-basis: min-content;
+    flex-basis: 170px;
     padding-right: 40px;
-    height: 100vh;
+    height: calc(100vh - 70px);
     overflow-y: auto;
     /* DEBUG */
     background-color:#051e34;
@@ -109,9 +112,9 @@ li.breadcrumb-item:nth-child(2) {
     background-image: url(../img/sidebar-bg.png);
 }
 #main-content{
-    flex-grow: 1;
+    flex-basis: calc(100% - 170px);
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
     /* DEBUG */
     background-color: green;
 
