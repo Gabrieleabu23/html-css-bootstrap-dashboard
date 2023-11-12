@@ -54,22 +54,22 @@
   <div id="wrapper">
     <div id="side-bar" class="bg_side-bar">
       <div class="container-fluid">
-          <div class="row justify-content-between text-white">
-            <ul class="navbar-nav p-4 mx-auto gap-3">
-              <li class="nav-item d-flex gap-3 align-items-center">
-                <i class="fa-solid fa-house"></i><span class="d-none d-lg-inline">Home</span>
-              </li>
-              <li class="nav-item d-flex gap-3 align-items-center">
-                <i class="fa-solid fa-chart-simple me-1"></i><span class="d-none d-lg-inline">Stats</span>
-              </li>
-              <li class="nav-item d-flex gap-3 align-items-center">
-                <i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span>
-              </li>
-            </ul>
-            <div class="d-flex gap-3 align-items-center p-4 mt-auto">
-              <i class="fa-solid fa-gear gap-3"></i><span class="ps-1 d-none d-lg-inline">Admin</span>
-            </div>
+        <div class="row justify-content-between text-white">
+          <ul class="navbar-nav p-4 mx-auto gap-3">
+            <li class="nav-item d-flex gap-3 align-items-center">
+              <i class="fa-solid fa-house"></i><span class="d-none d-lg-inline">Home</span>
+            </li>
+            <li class="nav-item d-flex gap-3 align-items-center">
+              <i class="fa-solid fa-chart-simple me-1"></i><span class="d-none d-lg-inline">Stats</span>
+            </li>
+            <li class="nav-item d-flex gap-3 align-items-center">
+              <i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline">Signals</span>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 align-items-center p-4 mt-auto">
+            <i class="fa-solid fa-gear gap-3"></i><span class="ps-1 d-none d-lg-inline">Admin</span>
           </div>
+        </div>
       </div>
       </nav>
     </div>
@@ -81,10 +81,15 @@
             <nav aria-label="breadcrumb ">
               <ol class="breadcrumb origine">
                 <li class="breadcrumb-item">
-                  <span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal" ><a href="#" class="text-white ">3 app</a></span></li>
-                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#" class="text-white ">Boolean mobile app</a></span></li>
-                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#" class="text-white ">Boolean web app</a></span></li>
-                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#" class="text-white ">Boolean blog app</a></span></li>
+                  <span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#" class="text-white ">3
+                      app</a></span>
+                </li>
+                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#"
+                      class="text-white ">Boolean mobile app</a></span></li>
+                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#"
+                      class="text-white ">Boolean web app</a></span></li>
+                <li class="breadcrumb-item"><span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal"><a href="#"
+                      class="text-white ">Boolean blog app</a></span></li>
               </ol>
             </nav>
           </div>
@@ -93,7 +98,24 @@
             <span class="fs-3">125</span>
           </div>
           <div class="col-2">
-            <h6>Nuovo Studente<span class="border border-white bg-transparent fs-6 fw-normal  border_radius_20 ms-2 pt-2 pb-2 pe-3 ps-3"><i class="fa-solid fa-plus fs-6"></i></span></h6>
+            <h6>Nuovo Studente<span
+                class="border border-white bg-transparent fs-6 fw-normal  border_radius_20 ms-3 pt-2 pb-2 pe-3 ps-3">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button"
+                  aria-controls="offcanvasExample">
+                  <i class="fa-solid fa-plus"></i>
+                </a></span></h6>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
