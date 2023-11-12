@@ -6,9 +6,14 @@
 
 
 /* MAIN CLASSES */
-
+a{
+    text-decoration: none;
+}
 .border_radius_20{
     border-radius: 0.45rem;
+}
+.bg_dark_alpha{
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* FONT AWESOME */
@@ -45,6 +50,37 @@ header .form-control:focus {
 .fa-solid.fa-signal{
     margin-left: -2px;
 }
+
+/* MAIN NAV BAR */
+.main-nav{
+    height: 150px;
+
+    /* DEBUG */
+    background-color: #1b72e8;
+}
+.origine .breadcrumb-item+.breadcrumb-item::before {
+    content: "";
+}
+
+.breadcrumb-item:first-of-type + .breadcrumb-item::before {
+    content: "\00BB";
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: -13px;
+    left: 0px;
+    padding-right: 1rem;
+  }  
+li.breadcrumb-item:nth-child(2) {
+    position: relative;
+    height: 100%;
+    padding-left: 20px;
+  } 
+  
+
+/* #doubleright-pointing{
+    font-size: 30px;
+} */
 /* MAIN CONTAINERS */
 #wrapper{
     display: flex;
