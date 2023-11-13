@@ -15,6 +15,9 @@ a{
 .border_radius_20{
     border-radius: 0.45rem;
 }
+.border_radius_50{
+    border-radius: 50%;
+}
 .bg_dark_alpha{
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -115,6 +118,7 @@ li.breadcrumb-item:nth-child(2) {
     flex-basis: calc(100% - 170px);
     height: 100%;
     overflow-y: auto;
+    background-color: #f8f9fa;
     /* DEBUG */
     /* background-color: green; */
 
@@ -138,6 +142,10 @@ background-color: #f7f7f7;
     margin-left: -20px;
   }
   
+/* FONT SIZE P KITCHEN SINK */
+.text_size_13{
+    font-size: 13px;
+}
 @media all and (max-width:991px){
     .offcanvas_width{
         width: 100%;
