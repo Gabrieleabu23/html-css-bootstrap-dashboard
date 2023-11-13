@@ -57,6 +57,30 @@ header .form-control:focus {
     margin-left: -2px;
 }
 
+
+/* In linea #3 | http://127.0.0.1:5500/?# */
+
+#side-bar .nav-item.d-flex.gap-3.align-items-center:hover {
+    background: rgba(255,255,255,0.4);
+    width: 110px;
+}
+  
+  
+/* #side-bar li.nav-item:nth-child(3) {
+    padding: 10px 5px;
+} */
+  
+  
+#side-bar li.nav-item {
+    padding: 10px 5px;
+  }
+  
+  
+  /* li.nav-item:nth-child(1) {
+    padding: 10px 5px;
+  } */
+  
+
 /* MAIN NAV BAR */
 .main-nav{
     /* height: 150px; */
@@ -64,6 +88,18 @@ header .form-control:focus {
     /* DEBUG */
 /* background-color: violet; */
 }
+
+
+.bg_transparent{
+    background-color: transparent;
+}
+  
+.btn-primary:hover {
+    color:black;
+    background-color:white;
+    border-color: none;
+  }
+   
 .origine .breadcrumb-item+.breadcrumb-item::before {
     content: "";
 }
