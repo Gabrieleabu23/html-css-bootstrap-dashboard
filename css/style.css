@@ -11,6 +11,7 @@ header{
 /* MAIN CLASSES */
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 .border_radius_20{
     border-radius: 0.45rem;
@@ -98,12 +99,18 @@ div.d-flex:nth-child(2) {
     background-color: transparent;
 }
   
-.btn-primary:hover {
+.main-nav .btn-primary:hover {
     color:black;
     background-color:white;
     border-color: none;
   }
-   
+
+
+
+table .bg_transparent:hover {
+    background: #bbbaba;
+  }
+  
 .origine .breadcrumb-item+.breadcrumb-item::before {
     content: "";
 }
@@ -174,7 +181,10 @@ li.breadcrumb-item:nth-child(2) {
 .table > tbody > tr {
     vertical-align: middle;
   }
-  
+
+  .table > tbody > tr:hover{
+    background-color:lightgray
+  }
 /* MAIN CONTENT - MAIN */
 .border_color_col{
     border-color: #dbdbdb;
