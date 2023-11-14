@@ -87,11 +87,17 @@
         </div>
       </div>
     </div>
+    <!-- FINE SIDE BAR -->
+    <!-- INIZIO SECONDO CONTENITORE - MAIN CONTENT -->
     <div id="main-content">
+      <!-- BARRA DI NAVIGAZIONE DEL MAIN CONTENT DOVE CI SONO LE BREADCRUMB- BRICIOLE DI PANE  E UN OFFCANVAS-->
       <div class="main-nav pt-4 p-3 pb-3 text-white">
+        <!-- DIVISIONE IN COLONNE LAYOUT A 12 -->
         <div class="row mt-2 flex-lg-row flex-md-row flex-column-reverse">
+          <!-- BREADCRUMB CAMBIATE DI ORDINE IN VERSIONE TABLET -->
           <div class="col-12 col-lg-6 col-md-4 col-sm-12 order-2">
             <h2>Boolean <span class="badge rounded-pill bg_dark_alpha fs-6 fw-normal">Piano blaze</span></h2>
+            <!-- TAG NAV PER LE BREADCRUMB CON LISTA ALL'INTERNO -->
             <nav aria-label="breadcrumb ">
               <ol class="breadcrumb origine">
                 <li class="breadcrumb-item">
@@ -113,10 +119,12 @@
               </ol>
             </nav>
           </div>
+          <!-- NUMERO STUDENTI INVERTITO DI ORDINE IN VERSIONE TABLET -->
           <div class="col-12  col-lg-4  col-md-4 col-sm-12 order-1 order-md-2">
             <h6>Studenti online negli ultimi 30 minuti</h6>
             <span class="fs-3">125</span>
           </div>
+          <!-- OFFCANVAS ATTIVO TRAMITE ICONA PLUS CAMBIATO DI ORDINE IN VERSIONE TABLET-->
           <div class="col-lg-2 col-md-4 col-sm-12 order-3 order-md-3">
             <span>
               <h6 class="d-inline-block pe-1">Nuovo Studente
@@ -197,9 +205,14 @@
           </div>
         </div>
       </div>
+      <!-- FINE BARRA DI NAVIGAZIONE DEL MAIN CONTENT DOVE CI SONO LE BREADCRUMB- BRICIOLE DI PANE  E UN OFFCANVAS-->
+      <!-- INIZIO CONTENITORE PRINCIPALE DOVE TROVIAMO LA TABELLA, LE FAQ, I TODO E LA KITCHEN SINK -->
       <div class="container-fluid ps-1 pb-5">
+        <!-- LA RIGA CHE PERMETTE DI DIVIDERE LO SPAZIO IN DUE MACRO COLONNE, VERSIONE DESKTOP UNA DI 7/12 E UNA DI 5/12, VERSIONE TABLET IN POI ENTRAMBE A 12 -->
         <div class="row pt-4 ps-3">
+          <!-- COLONNA GRANDE A SINISTRA CONTENENTE LA TABELLA E LE FAQ -->
           <div class="col-12 col-lg-7 ps-0">
+            <!-- INIZIO TABELLA  -->
             <div class="col-12 border-0 ">
               <div class="border border_color_col mb-2 p-0 pb-3 rounded-2 mx-2 bg-white">
                 <h3 class="pt-2 pb-4  ps-3 border-bottom border_color_col bg_col_title">Prossime Classi</h3>
@@ -390,6 +403,8 @@
                 </div>
               </div>
             </div>
+            <!-- FINE TABELLA  -->
+            <!-- INIZIO FAQ -->
             <div class="col-12 border-0 mb-4 ">
               <div class=" border border_color_col p-0 rounded-2 mx-2 mt-4 bg-white">
                 <h3 class="pt-2 pb-4  ps-3 border-bottom border_color_col bg_col_title">F.A.Q.</h3>
@@ -436,7 +451,10 @@
               </div>
             </div>
           </div>
+          <!-- FINE FAQ -->
+          <!-- COLONNA PICCOLA CONTENENTE I TODO E LA KITCHEN SINK  -->
           <div class="col-12 col-lg-5 ps-0">
+            <!-- INIZIO TODO -->
             <div class="col-12 border-0 ">
               <div class="border border_color_col mb-2 p-0 pb-3 rounded-2 mx-2 bg-white">
                 <h3 class="pt-2 pb-4  ps-3 border-bottom border_color_col bg_col_title">Todo</h3>
@@ -468,6 +486,8 @@
                 </div>
               </div>
             </div>
+            <!-- FINE TODO -->
+            <!-- INIZIO KITCHEN SINK -->
             <div class="col-12 border-0 mt-4">
               <div class="border border_color_col mb-2 p-0 pb-3 rounded-2 mx-2 bg-white">
                 <div class="container-fluid p-3">
@@ -493,10 +513,16 @@
 
             </div>
           </div>
+          <!-- FINE KITCHEN SINK -->
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-          </script>
+      </div>
+      <!-- FINE CONTENITORE PRINCIPALE DOVE TROVIAMO LA TABELLA, LE FAQ, I TODO E LA KITCHEN SINK -->
+      <!-- SCRIPT CHE SERVE PER ANIMAZIONI E RESPONSIVE BOOTSTRAP, PER I VARI DROPDOWN, ACCORDION(FAQ) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+
+      <!-- FINE CODICE HTML -->
 </body>
 
 </html>

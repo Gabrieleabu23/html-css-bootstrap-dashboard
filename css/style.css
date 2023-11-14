@@ -3,31 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/* HEADER */
 header{
     height: 70px;
 }
-
-/* MAIN CLASSES */
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
-.border_radius_20{
-    border-radius: 0.45rem;
-}
-.border_radius_50{
-    border-radius: 50%;
-}
-.bg_dark_alpha{
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* FONT AWESOME */
-.fa-solid.fa-bell{
-    color: #ff8f00;
-}
-/* NAVBAR */
+/* NAVBAR HEADER*/
 #search_bar{
     content: "\f002";
 }
@@ -47,9 +27,40 @@ header .form-control:focus {
     box-shadow:0 0 0 0.1rem transparent;
   }
   
+/* FINE HEADER */
+
+
+/* MAIN CLASSES - CLASSI DI USO UNIVERSALE */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.border_radius_20{
+    border-radius: 0.45rem;
+}
+.border_radius_50{
+    border-radius: 50%;
+}
+.bg_dark_alpha{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.border_color_col{
+    border-color: #dbdbdb;
+}
+.bg_col_title{
+background-color: #f7f7f7;
+} 
+
+/* FONT AWESOME */
+.fa-solid.fa-bell{
+    color: #ff8f00;
+}
 
 
 /* SIDEBAR */
+.bg_side-bar{
+    background-image: url(../img/sidebar-bg.png);
+}
 #side-bar .container-fluid,
 #side-bar .row{
     height: 100%;
@@ -57,8 +68,6 @@ header .form-control:focus {
 .fa-solid.fa-signal{
     margin-left: -2px;
 }
-
-
 
 #side-bar .nav-item.d-flex.gap-3.align-items-center:hover {
     background: rgba(255,255,255,0.4);
@@ -85,7 +94,41 @@ div.d-flex:nth-child(2) {
     padding: 10px 5px;
   }
   
+/* FINE SIDEBAR */
 
+/* INIZIO MAIN CONTENT */
+#main-content{
+    flex-basis: calc(100% - 170px);
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    /* DEBUG */
+    /* background-color: green; */
+
+}
+
+.offcanvas_width{
+    width: 50%;
+}
+.table_width{
+    width: 95%;
+}
+/* TABLE VERTICAL ALLIGNMENT */
+.table > tbody > tr {
+    vertical-align: middle;
+  }
+
+  .table > tbody > tr:hover{
+    background-color:lightgray
+  }
+#flexCheckDefault\  {
+    margin-left: -20px;
+  }
+  
+/* FONT SIZE P KITCHEN SINK */
+.text_size_13{
+    font-size: 13px;
+}
 /* MAIN NAV BAR */
 .main-nav{
     /* height: 150px; */
@@ -93,8 +136,7 @@ div.d-flex:nth-child(2) {
     /* DEBUG */
 /* background-color: violet; */
 }
-
-
+/* CLASSE APPOSITA PER SISTEMARE GLI HOVER CON BACKGROUND DIVERSO NEL MAIN CONTENT */
 .bg_transparent{
     background-color: transparent;
 }
@@ -104,8 +146,6 @@ div.d-flex:nth-child(2) {
     background-color:white;
     border-color: none;
   }
-
-
 
 table .bg_transparent:hover {
     background: #bbbaba;
@@ -139,10 +179,8 @@ li.breadcrumb-item:nth-child(2) {
   .plus_rounded i{
     font-size: 12px;
   }
-/* #doubleright-pointing{
-    font-size: 30px;
-} */
-/* MAIN CONTAINERS */
+
+/* MAIN CONTAINERS - MACRO CONTENITORE CHE SUDDIVIDONO LA STRUTTURA HTML */
 #wrapper{
     display: flex;
     height: calc(100vh - 70px);
@@ -158,49 +196,9 @@ li.breadcrumb-item:nth-child(2) {
     /* DEBUG */
     background-color:#051e34;
 }
-.bg_side-bar{
-    background-image: url(../img/sidebar-bg.png);
-}
-#main-content{
-    flex-basis: calc(100% - 170px);
-    height: 100%;
-    overflow-y: auto;
-    background-color: #f8f9fa;
-    /* DEBUG */
-    /* background-color: green; */
 
-}
-
-.offcanvas_width{
-    width: 50%;
-}
-.table_width{
-    width: 95%;
-}
-/* TABLE ALLIGNMENT VERTICAL */
-.table > tbody > tr {
-    vertical-align: middle;
-  }
-
-  .table > tbody > tr:hover{
-    background-color:lightgray
-  }
-/* MAIN CONTENT - MAIN */
-.border_color_col{
-    border-color: #dbdbdb;
-}
-.bg_col_title{
-background-color: #f7f7f7;
-} 
-  
-#flexCheckDefault\  {
-    margin-left: -20px;
-  }
-  
-/* FONT SIZE P KITCHEN SINK */
-.text_size_13{
-    font-size: 13px;
-}
+/* MEDIA QUERY PER SISTEMARE ALCUNE COSE */
+/* DA TABLET IN GIU' */
 @media all and (max-width:991px){
     #side-bar .nav-item.d-flex.gap-3.align-items-center:hover{
         width: 30px;
@@ -220,11 +218,13 @@ background-color: #f7f7f7;
       }
 }
 
+/* DA SM IN GIU' */
 @media all and (max-width:767px){
     .row.mt-2.flex-lg-row.flex-md-row.flex-column-reverse{
        gap: 20px;
     }
 }
+/* DA XS IN GIU' */
 @media all and (max-width:575px) {
     
 
