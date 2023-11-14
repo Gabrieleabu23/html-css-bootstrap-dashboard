@@ -15,28 +15,36 @@
 
 <body>
   <header>
+    <!-- INIZIO NAV BAR PRINCIPALE BIANCA  -->
     <nav class="navbar navbar-light bg-light ">
+      <!-- CONTAINER PRINCIPALE DI TUTTA LA NAVBAR -->
       <div class="container-fluid flex-nowrap bg-white align-items-center">
+        <!-- LOGO VERSIONE DESKTOP E VERSIONE TABLET IN POI -->
+        <!-- DESKTOP -->
         <a class="navbar-brand d-none d-lg-block" href="#">
           <img src="img/logo.svg" alt="" width="150" height="50">
         </a>
+        <!-- TABLET ... MOBILE... -->
         <a class="navbar-brand d-lg-none" href="#">
           <img src="img/mobile-logo.png" alt="" width="50" class="bg-transparent" height="50">
         </a>
-
+        <!-- BARRA DI RICERCA  -->
         <form class=" d-flex grow_nav bg_search_bar border_radius_20 border-0 me-2">
           <div class="input-group bg-transparent">
+            <!-- ICONA DELLA LENTE D'INGRADIMENTO INSERITA TRAMITE COMANDO BOOTSTRAP ALL'INTERNO DELLA BARRA DI RICERCA -->
             <span class="input-group-text bg-transparent border-0" id="basic-addon1"><i
                 class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" class="form-control bg-transparent ps-0 border-0"
               placeholder="Prova a cercare: Lezioni di Laravel " aria-describedby="basic-addon1">
           </div>
         </form>
+        <!-- LISTA DI ICONE CHE SCOMPARE DA TABLET IN POI -->
         <ul class="navbar-nav flex-row me-auto mb-2 mb-lg-0 d-none d-lg-flex ">
           <li><i class="fa-solid fa-list-ul p-0 pe-2 ps-2 text-gray"></i></li>
           <li><i class="fa-solid fa-circle-question pe-2 ps-2"></i></li>
           <li><i class="fa-solid fa-ellipsis-vertical pe-2 ps-2"></i></li>
         </ul>
+        <!-- BUTTON TOGGLER CHE APPARE A DESTRA COME ULTIMO ELEMENTO, CAMPANELLA ARANCIONE CON MENU DROPDOWN -->
         <div class="btn-group">
           <a type="button" class="btn btn-secondary border-0 bg-transparent" data-bs-toggle="dropdown"
             aria-expanded="false">
@@ -50,11 +58,16 @@
         </div>
       </div>
     </nav>
+    <!-- FINE NAV BAR PRINCIPALE BIANCA  -->
   </header>
+  <!-- CONTENITORE SUDDIVISO IN 2 PARTI - SIDE BAR E MAIN CONTENT -->
   <div id="wrapper">
+    <!-- INIZIO SIDE BAR -->
     <div id="side-bar" class="bg_side-bar">
+      <!-- CONTENITORE DI TUTTA LA SIDE-BAR -->
       <div class="container-fluid">
         <div class="row justify-content-between text-white">
+          <!-- LISTA CHE PERMETTE DI AVERE I PRIMI 3 ELEMENTI IN FILA -->
           <ul class="navbar-nav p-4 mx-auto gap-3">
             <li class="nav-item d-flex gap-3 align-items-center">
               <i class="fa-solid fa-house"></i><a class="d-none d-lg-inline text-white">Home</a>
@@ -66,12 +79,13 @@
               <i class="fa-solid fa-signal"></i><a class="d-none d-lg-inline text-white">Signals</a>
             </li>
           </ul>
+          <!-- FINE LISTA -->
+          <!-- ULTERIORE DIV CHE PERMETTE DI ESSERE ALLINEATO ALLA FINE TRAMITE LO SPACE BETWEEN DELLA ROW -->
           <div class="d-flex gap-3 align-items-center  mt-auto ms-4 ps-0">
             <i class="fa-solid fa-gear gap-3 ps-2"></i><a class=" d-none d-lg-inline text-white">Admin</a>
           </div>
         </div>
       </div>
-      </nav>
     </div>
     <div id="main-content">
       <div class="main-nav pt-4 p-3 pb-3 text-white">
@@ -204,7 +218,8 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" class="border_radius_50"  width="30" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" class="border_radius_50"
+                            width="30" height="30">
                           <span class="fw-normal ps-2">Classe 75</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">15 Feb 2021</td>
@@ -224,7 +239,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 76</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">16 Feb 2021</td>
@@ -244,7 +260,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 77</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">17 Feb 2021</td>
@@ -264,7 +281,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 78</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">18 Feb 2021</td>
@@ -284,7 +302,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 79</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">19 Feb 2021</td>
@@ -304,7 +323,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 80</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">20 Feb 2021</td>
@@ -324,7 +344,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 81</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">21 Feb 2021</td>
@@ -344,7 +365,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30" class="border_radius_50" height="30">
+                        <th scope="row" class="ps-4"><img src="img/class-avatar.jpg" alt="" width="30"
+                            class="border_radius_50" height="30">
                           <span class="fw-normal ps-2">Classe 82</span>
                         </th>
                         <td class="fs-6 text-center d-none d-lg-table-cell d-md-table-cell">22 Feb 2021</td>
@@ -449,11 +471,12 @@
             <div class="col-12 border-0 mt-4">
               <div class="border border_color_col mb-2 p-0 pb-3 rounded-2 mx-2 bg-white">
                 <div class="container-fluid p-3">
-                  <div class="card" >
+                  <div class="card">
                     <img src="img/stats.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Utenti attivi</h5>
-                      <p class="card-text text_size_13">Lista degli utenti attivi in piattaforma nell&apos;ultimo mese</p>
+                      <p class="card-text text_size_13">Lista degli utenti attivi in piattaforma nell&apos;ultimo mese
+                      </p>
                     </div>
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">Gennaio: 1200</li>
